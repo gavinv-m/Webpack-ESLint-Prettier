@@ -14,10 +14,11 @@
       "error",
       {
         "arrays": "never",
-        "objects": "never",
-        "imports": "never",
         "exports": "never",
-        "functions": "never"
+        "functions": "never",
+        "imports": "never",
+        "objects": "never",
+        "trailing": "always"
       }
     ],
     "import-newlines/enforce": ["error", 2],
@@ -26,10 +27,10 @@
     "object-curly-newline": [
       "error",
       {
-        "ObjectExpression": { "multiline": true, "minProperties": 2 },
-        "ObjectPattern": { "multiline": true },
+        "ExportDeclaration": { "multiline": true, "minProperties": 3 },
         "ImportDeclaration": "always",
-        "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+        "ObjectExpression": { "minProperties": 2, "multiline": true },
+        "ObjectPattern": { "multiline": true }
       }
     ]
   }
